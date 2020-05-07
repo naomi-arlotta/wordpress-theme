@@ -1,0 +1,105 @@
+
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    @extend %no-scrollbar;
+}
+
+main {
+    margin-top: 56px;
+}
+
+.navbar-brand {
+    height: 40px;
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.section-y-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include media-breakpoint-up(md) { 
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.page-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        // background-color: rgba($color: #000000, $alpha: 0.2);
+        background-image: url('../../assets/img/pattern-hero.png');
+    }
+    .page-hero-content {
+        min-height: 336px;
+        h1, h2, p {
+            color: $white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+.section-who-we-are {
+    position: relative;
+    img.img-who-we-are {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: auto;
+    }
+}
+/*lazy*/
+img {
+    opacity: 1;
+    transition: opacity 0.3s;
+    &.lazy {
+        opacity: 0.2;
+    }
+}
+
+/**
+* Tease
+*/
+
+//tease category
+.tease-category {
+    position: relative;
+    height: 275px;
+    @include media-breakpoint-up(md) {
+        height: 300px;
+    }
+}
+
+.categoria1 {
+    color: #830000;
+    }
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) { 
+
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) { 
+
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) { 
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) { 
+
+}
