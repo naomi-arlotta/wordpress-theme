@@ -17,17 +17,25 @@
 
 <?php get_header(); ?>
 
+<main id="site-content" role="main">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            <?php 
+                if ( have_posts() ) :
+                    while (have_posts() ) :
+                        the_post();?>
 
-    <?php get_template_part('template-parts/section/section-page-hero') ?>
-
-    <?php get_template_part('template-parts/section/section-who-we-are') ?>
-
-    <?php get_template_part('template-parts/section/section-blog') ?>
-
-   
-
-
-
-Homepage tamplate
+                        <h1> <?php the_title(); ?> </h1>
+                        <?php
+                    endwhile;
+            
+                endif;
+            ?>
+            
+            </div>
+        </div>
+    </div>
+</main>
 
 <?php get_footer(); ?>

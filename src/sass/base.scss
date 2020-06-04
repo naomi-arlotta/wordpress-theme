@@ -4,6 +4,19 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
     @extend %no-scrollbar;
+    
+
+    @include media-breakpoint-up(sm) {
+        &.admin-bar .fixed-top {
+            top: 46px;
+        } 
+    } 
+
+    @include media-breakpoint-up(md){
+        &.admin-bar .fixed-top {
+            top: 32px;
+        }
+    }
 }
 
 main {
@@ -25,7 +38,7 @@ main {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-}
+} 
 
 .page-hero {
     position: relative;
@@ -39,7 +52,7 @@ main {
         top: 0px;
         left: 0px;
         // background-color: rgba($color: #000000, $alpha: 0.2);
-        background-image: url('../../assets/img/pattern-hero.png');
+        background-image: url('#{$images-path}/pattern-hero.png');
     }
     .page-hero-content {
         min-height: 336px;
@@ -47,7 +60,7 @@ main {
             color: $white;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
-    }
+    } 
 }
 
 .section-who-we-are {

@@ -18,16 +18,5 @@
 <?php get_header(); ?>
 
 
-    <?php get_template_part('template-parts/section/section-page-hero') ?>
-
-    <?php get_template_part('template-parts/section/section-who-we-are') ?>
-
-    <?php get_template_part('template-parts/section/section-blog') ?>
-
-   
-
-
-
-Homepage tamplate
 
 <?php get_footer(); ?>

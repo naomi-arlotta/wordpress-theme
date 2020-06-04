@@ -52,6 +52,7 @@ if ( ! function_exists( 'samtheme_setup' ) ) :
 	}
 // samtheme_setup
 
+
 add_action( 'after_setup_theme', 'samtheme_setup' );
 
 
@@ -72,3 +73,9 @@ function samtheme_register_styles() {
 endif;
 
 add_action( 'wp_enqueue_scripts', 'samtheme_register_styles' );
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}

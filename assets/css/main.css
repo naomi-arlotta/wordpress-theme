@@ -9950,6 +9950,16 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+@media (min-width: 576px) {
+  body.admin-bar .fixed-top {
+    top: 46px;
+  }
+}
+@media (min-width: 768px) {
+  body.admin-bar .fixed-top {
+    top: 32px;
+  }
+}
 
 main {
   margin-top: 56px;
@@ -9986,7 +9996,7 @@ main {
   position: absolute;
   top: 0px;
   left: 0px;
-  background-image: url("../../assets/img/pattern-hero.png");
+  background-image: url("../../assets/images/pattern-hero.png");
 }
 .page-hero .page-hero-content {
   min-height: 336px;
