@@ -8,7 +8,7 @@ $args = array(
     'post-per-page' => 4,
     'post_type' => 'post',
     'order' => 'DESC',
-    'category_name' => 'categoria-uno',
+    
     'post_status' => 'publish',
 );
  
