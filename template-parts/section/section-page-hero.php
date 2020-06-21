@@ -39,7 +39,7 @@
                             </h1>
 
                         <?php if(isset ($page_hero['content'])&& $page_hero['content']):?>
-                            <p class="text-white"><?php echo $page_hero['content']?></p>
+                            <p class="text-white p-32px"><?php echo $page_hero['content']?></p>
                         <?php endif; ?>
                         <?php if(isset ($page_hero['call_to_action_'])&& $page_hero['call_to_action_']):?>
                             <a href="<?php echo $page_hero['call_to_action_']['url'] ?>" target="<?php echo $page_hero['call_to_action_']['target'] ?>" class="btn btn-primary btn-lg text-uppercase rounded-0"><?php echo $page_hero['call_to_action_']['title'] ?></a>

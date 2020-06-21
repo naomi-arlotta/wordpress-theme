@@ -23,12 +23,12 @@
     ?>
 
 <!-- sezione chi siamo -->
-<section class="section section-who-we-are">
+<section id="chi-siamo" class="section section-who-we-are">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 section-y-padding">
                             
-                        <h2 class="text-primary text-uppercase"><?php 
+                        <h2 class="text-primary text-uppercase font-weight-bold"><?php 
                             if( isset($who_we_are['title']) && $who_we_are['title']){ 
                                 echo $who_we_are['title']; 
                             } else {
@@ -36,7 +36,7 @@
                             }
                             ?>
                         </h2>
-                        <p>
+                        <p class="text-dark">
                             <?php 
                             if( isset($who_we_are['content']) && $who_we_are['content']){ 
                                 echo $who_we_are['content']; 
@@ -53,7 +53,7 @@
                          <div class="col-12 col-md-6 d-none d-md-block">
 
                          <?php if( !empty( $who_we_are['image'] ) ): ?>
-                         <img src="<?php echo esc_url($who_we_are['image']['url']); ?>" alt="<?php echo esc_attr($who_we_are['image']['alt']); ?>" />
+                         <img src="<?php echo esc_url($who_we_are['image']['url']); ?>" alt="<?php echo esc_attr($who_we_are['image']['alt']); ?>" class="img-fluid" />
                          <?php endif; ?>
                         
                         

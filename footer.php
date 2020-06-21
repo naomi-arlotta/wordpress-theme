@@ -74,7 +74,7 @@ $nl_contact_form_id = get_field('nl_contact_form_id', 'options');
                             <?php
                                 $email = get_field('main_email', 'options');
                                 if($email): ?>
-                                <a href="mailto:<?php echo $email; ?>" class="px-3">info@nike.com</a>
+                                <a href="mailto:<?php echo $email; ?>" class="px-3"><?php echo $email;?></a>
                             <?php endif ?>
                         <?php the_field('privacy_policy_link', 'options'); ?>
                         <?php the_field('cookie_policy_link', 'options'); ?>

@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-12 col-lg-6">
                 <?php if($section_title): ?>
-                <h2 class="text-primary text-uppercase"><?php echo $section_title; ?></h2>
+                <h2 class="text-primary text-uppercase font-weight-bold"><?php echo $section_title; ?></h2>
                 <?php endif; ?>
             </div>
         </div>

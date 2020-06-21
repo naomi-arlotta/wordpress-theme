@@ -13,6 +13,8 @@
 
 <?php get_header(); ?>
 
+<div class="container">
+
 <?php
 
 if ( have_posts() ) :
@@ -38,6 +40,7 @@ else :
     _e( 'sorry, no posts matched your criteria.', 'samtheme');
 endif;
 ?>
+</div>
 
 
 

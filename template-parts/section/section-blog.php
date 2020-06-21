@@ -22,7 +22,7 @@ $the_query = new WP_Query( $args );
         <div class="row"> 
         
             <div class="col-12 mt-5 mb-5">
-                <h2>BLOG</h2>
+                <h2 class="text-primary text-uppercase font-weight-bold">BLOG</h2>
             </div>
 
         <?php //the loop
