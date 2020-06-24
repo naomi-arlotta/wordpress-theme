@@ -59,18 +59,20 @@ $nl_contact_form_id = get_field('nl_contact_form_id', 'options');
             </div>
 
             <div class="container">
-                <div class="row">
-                    <div class="col col-md-6 col-lg-4">
+                <div class="row pb-5">
+                    <div class="col col-md-6 col-lg-4 mt-5">
                         <!-- logo -->
                     <?php 
                         $image = get_field('footer_logo', 'options');
                         if( !empty( $image ) ): ?>
                         <img class="footer-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
+                        <span class="footer-info">
                         <?php the_field('footer_content', 'options'); ?>
+                        </span>
                     </div>
                     <div class="col col-md-6 col-lg-8">
-                        <div class="d-flex w-100 h-100 justify-content-end align-items-end flex-row">
+                        <div class="d-flex w-100 h-100 justify-content-end align-items-end flex-row footer-info">
                             <?php
                                 $email = get_field('main_email', 'options');
                                 if($email): ?>

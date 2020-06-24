@@ -35,7 +35,7 @@ if(is_category()) {
         <div class="row"> 
 
             <div class="col-12 mt-5 mb-5">
-                <h1 class="text-primary"> <?php echo $archive_title; ?> </h1>
+                <h1 class="text-primary text-uppercase"> <?php echo $archive_title; ?> </h1>
                 
             </div>
 

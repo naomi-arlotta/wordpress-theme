@@ -5,7 +5,6 @@
     </a>
 
     <?php $categories = get_the_category();?>
-    <!-- <img src="https://source.unsplash.com/random" class="img-fluid" width="270px" height="255px"><br>  -->
 
     <?php if (!empty($categories) && isset($categories[0])) :?>
         <?php
@@ -18,5 +17,5 @@
     <span class="data-copy"><?php the_date(); ?></span>  <br>
     
 
-    <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute();?>"> <?php the_title(); ?> </a>
+    <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute();?>"><span class="cat-title"> <?php the_title(); ?> </span> </a>
 </article>

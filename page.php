@@ -23,7 +23,7 @@ if ( have_posts() ) :
         //print("<pre>".print_r($post,true)."</pre>");
     ?>
     
-    <h1> 
+    <h1 class="text-uppercase"> 
         <?php the_title(); ?>
     </h1>
     

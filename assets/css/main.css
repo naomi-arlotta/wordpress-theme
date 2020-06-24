@@ -2442,8 +2442,6 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #830000;
   border-color: #830000;
-  opacity: 0.8;
-  
 }
 .btn-primary:hover {
   color: #fff;
@@ -2899,8 +2897,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.4rem 2rem;
-  font-size: 14px;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -9741,7 +9739,7 @@ a.text-light:hover, a.text-light:focus {
 }
 
 .text-dark {
-  color: #44484d !important;
+  color: #343a40 !important;
 }
 
 a.text-dark:hover, a.text-dark:focus {
@@ -10054,6 +10052,28 @@ img.lazy {
   }
 }
 
+.categoria {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.data-copy {
+  font-size: 12px;
+  color: grey;
+}
+
+.cat-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.h1blog {
+  font-size: 48px !important;
+  font-weight: 900;
+}
+
 .page-footer {
   color: white;
 }
@@ -10074,6 +10094,11 @@ img.lazy {
   margin-bottom: 15px;
   padding-bottom: 15px;
   padding-top: 15px;
+}
+
+.footer-info {
+  font-size: 13px;
+  font-weight: 100;
 }
 
 .categoria1 {
@@ -10113,6 +10138,18 @@ img.lazy {
 .p-32px {
   font-size: 32px;
   font-weight: 300;
+}
+
+input {
+  border: none;
+  font-size: 16px;
+}
+
+.btn {
+  opacity: 0.8 !important;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */

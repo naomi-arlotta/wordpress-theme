@@ -54,7 +54,7 @@ $the_query = new WP_Query( $args );
 
         <div class="row"> 
             <div class="col-12 mt-5 mb-5">
-                <a href="#" class="btn btn-primary text-uppercase rounded-0 mt-5 mb-5">Continua</a>   
+                <a href="#" class="btn btn-primary text-uppercase rounded-0">Continua</a>   
             </div>
         </div>
 

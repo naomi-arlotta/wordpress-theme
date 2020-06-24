@@ -109,6 +109,28 @@ img {
     }
 }
 
+.categoria {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.data-copy {
+    font-size: 12px;
+    color: grey;
+}
+
+.cat-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+.h1blog {
+    font-size: 48px!important;
+    font-weight: 900;
+}
+
 //footer
 
 .page-footer {
@@ -132,6 +154,11 @@ img {
     margin-bottom: 15px;
     padding-bottom: 15px;
     padding-top: 15px;
+}
+
+.footer-info{
+    font-size: 13px;
+    font-weight: 100;
 }
 
 .categoria1 {
@@ -193,3 +220,17 @@ img {
     font-size: 32px;
     font-weight: 300;
 }
+
+input {
+    border: none;
+    font-size: 16px;
+}
+
+.btn {
+    opacity: 0.8!important;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+}
+
+
