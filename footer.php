@@ -28,14 +28,8 @@ $nl_contact_form_id = get_field('nl_contact_form_id', 'options');
             <?php endif; ?>
                 <div class="container" >
                     <div class="row">
-                    <div class="col-12 col-lg-6 order-lg-2">
-                    <?php
-                        if($nl_contact_form_id){ 
-                            echo do_shortcode( '[contact-form-7 id=' . $nl_contact_form_id . ']' ); 
-                        }
-                    ?>
-                    </div>
-                        <div class="col-12 col-lg-6">
+                        
+                        <div class="col-12 col-lg-6 mb-2 social">
                          
                             <?php if($facebook_url): ?>
                                 <a href="<?php echo $facebook_url; ?>"> <img src="<?php echo $path_images; ?>facebook@2x.png" alt="facebook" class="social-icon"></a>
@@ -52,6 +46,13 @@ $nl_contact_form_id = get_field('nl_contact_form_id', 'options');
                             <?php if($youtube_url): ?>
                                 <a href="<?php echo $youtube_url; ?>"> <img src="<?php echo $path_images; ?>youtube@2x.png" alt="youtube" class="social-icon"></a>
                             <?php endif ?>
+                        </div>
+                        <div class="col-12 col-lg-6 order-lg-2">
+                        <?php
+                            if($nl_contact_form_id){ 
+                                echo do_shortcode( '[contact-form-7 id=' . $nl_contact_form_id . ']' ); 
+                            }
+                        ?>
                         </div>
                         
                     </div>

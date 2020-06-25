@@ -14,12 +14,12 @@
         while ( have_posts() ) { the_post(); ?>
         <div class="row">
             <div class="col">
-                <h1 class="text-primary text-uppercase"><?php  the_title(); ?></h1>
+                <h1 class="text-primary text-uppercase h1blog "><?php  the_title(); ?></h1>
                 
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 text-grey">
                     <?php  the_content(); ?>
             </div>
             <div class="col-lg-6">

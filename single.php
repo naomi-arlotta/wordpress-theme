@@ -26,7 +26,7 @@
                     while (have_posts() ) :
                         the_post();?>
 
-                        <h1 class="text-primary"><?php the_title(); ?> </h1>
+                        <h1 class="text-primary text-uppercase h1blog"><?php the_title(); ?> </h1>
                         <?php $categories = get_the_category();?>
                         <!-- <img src="https://source.unsplash.com/random" class="img-fluid" width="270px" height="255px"><br>  -->
 
@@ -43,7 +43,7 @@
                         
                         <div class="mt-3">
                             <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                        <div class="mt-3">
+                        <div class="mt-3 color-grey">
                             <?php the_content(); ?>
                         </div>
                         <p><?php the_tags(); ?> </p>
