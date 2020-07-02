@@ -21,6 +21,7 @@
         </div>
         <div class="row">
         <?php
+        if($categories):
             foreach( $categories as $category ) : 
                 $image = get_field('featured_image', $category);
                 $cat_url = get_category_link( $category->term_id );
@@ -46,6 +47,7 @@
                 </div>
                 <?php
             endforeach;
+        endif;
             ?>  
         </div>
     </div>

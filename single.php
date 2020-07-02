@@ -56,6 +56,9 @@
             ?>
             
             </div>
+            <div class="col-lg-4">
+                <?php get_template_part( 'template-parts/main-sidebar'); ?>
+            </div>
         </div>
     </div>
 </main>

@@ -1,3 +1,4 @@
+
 <article class="tease<?php echo $post->post_type ?>">
 
     <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute();?>">

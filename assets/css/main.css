@@ -10188,4 +10188,54 @@ footer .wpcf7-form .wpcf7-submit {
   }
 }
 
+.navbar {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: 0px;
+}
+
+.menu-item {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+  position: relative;
+}
+.menu-item:hover:before {
+  width: 100%;
+}
+.menu-item.current-menu-item:before {
+  width: 100%;
+}
+.menu-item:before {
+  content: "";
+  width: 0px;
+  height: 10px;
+  background-color: #830000;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: width 0.2s ease-out;
+}
+.menu-item a:hover {
+  text-decoration: none !important;
+}
+
+nav .nav-link {
+  padding-left: 0px !important;
+  padding-right: 1rem !important;
+  color: #830000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #830000 !important;
+  font-weight: 500;
+}
+
+input, textarea {
+  max-width: 100% !important;
+}
+
 /*# sourceMappingURL=main.css.map */
